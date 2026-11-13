@@ -56,3 +56,16 @@ fun Pertemuan9Theme(
         content = content
     )
 }
+
+@Composable
+fun RoomDBTheme(
+    darkTheme: Boolean = isSystemInDarkTheme(),
+    dynamicColor: Boolean = true,
+    content: @Composable () -> Unit
+) {
+    Pertemuan9Theme(
+        darkTheme = darkTheme,
+        dynamicColor = dynamicColor,
+        content = content
+    )
+}
