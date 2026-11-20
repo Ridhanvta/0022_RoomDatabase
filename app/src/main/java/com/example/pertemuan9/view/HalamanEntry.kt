@@ -53,7 +53,7 @@ fun EntrySiswaScreen(
             )
         }
     ) { innerPadding ->
-        EntryBody(
+        EntrySiswaBody(
             uiStateSiswa = viewModel.uiStateSiswa,
             onSiswaValueChange = viewModel::updateUiState,
             onSaveClick = {
@@ -71,7 +71,7 @@ fun EntrySiswaScreen(
 }
 
 @Composable
-fun EntryBody(
+fun EntrySiswaBody(
     uiStateSiswa: UIStateSiswa,
     onSiswaValueChange: (DetailSiswa) -> Unit,
     onSaveClick: () -> Unit,
